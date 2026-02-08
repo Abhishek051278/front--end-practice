@@ -65,6 +65,7 @@ const ApiDemo = () => {
                                 <th>Title</th>
                                 <th>Body</th>
                             </tr>
+                            
                             {getData.map((item) => <tr>
                                 <td>{item.id}</td>
                                 <td>{item.title}</td>
