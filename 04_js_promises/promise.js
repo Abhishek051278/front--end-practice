@@ -120,17 +120,20 @@
 //  getAllUsers()
 
 
-// fetch('https://api.github.com/users/hiteshchoudhary')
+fetch('https://api.github.com/users/hiteshchoudhary')
 
-// .then(function(resposne){
-//   return resposne.json();
-// })
-// .then((data)=>{
-//        console.log(data);
+.then(function(resposne){
+  return resposne.json();
+})
+.then((data)=>{
+       console.log(data);
        
-// })
-// .catch((error)=>{
-//       console.log(error);
-// })
+})
+.catch((error)=>{
+      console.log(error);
+})
+.finally((data)=>{
+      console.log("task completed");
+})
 
 
