@@ -1,22 +1,30 @@
 import React from 'react'
+import { useState,useRef } from 'react';
 
 function StopWatch() {
 
   let [ time , setTime ] = useState(0);
 
+  let refTimer = useRef(null);
+
 
    function startTimer (){
+    refTimer.current = setInterval(()=>{
 
+        setTime(time => time+1)
+    } ,1000)
 
    };
     
    function stopTimer (){
-
+    refTimer.current = clearInterval(refTimer.current)
+    refTimer.current = null;
 
    };
 
    function resetTimer (){
-
+          stopTimer();
+          setTime(0);
 
    };
 
