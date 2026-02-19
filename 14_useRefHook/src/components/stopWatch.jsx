@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState,useRef } from 'react';
+import { useState,useRef, useEffect } from 'react';
 
 function StopWatch() {
 
@@ -9,6 +9,8 @@ function StopWatch() {
 
 
    function startTimer (){
+
+    if ( refTimer.current !== null ) return;
     refTimer.current = setInterval(()=>{
 
         setTime(time => time+1)
@@ -17,7 +19,7 @@ function StopWatch() {
    };
     
    function stopTimer (){
-    refTimer.current = clearInterval(refTimer.current)
+    clearInterval(refTimer.current)
     refTimer.current = null;
 
    };
@@ -27,6 +29,12 @@ function StopWatch() {
           setTime(0);
 
    };
+
+
+   useEffect(() => {
+  return () => clearInterval(refTimer.current);
+}, []);
+
 
 
 
