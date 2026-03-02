@@ -10,6 +10,7 @@ const ApiDemo = () => {
 
     // ✅ GET API Call
     const handleGetApi = async () => {
+         
         try {
             const res = await fetch("https://jsonplaceholder.typicode.com/posts");
             const data = await res.json();
@@ -47,7 +48,7 @@ const ApiDemo = () => {
             <h2>API Demo Page (GET + POST)</h2>
 
             <div style={{ marginTop: "20px" }}>
-                <h3>1) Dummy GET API</h3>
+                <h3> Dummy GET API</h3>
 
                 <button onClick={handleGetApi}>
                     {getLoading ? "Loading..." : "Call GET API"}
