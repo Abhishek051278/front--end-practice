@@ -185,3 +185,22 @@
       }
 
       // console.log(`Vowel count is : ${countVowels("Abhishek")}`);
+
+  // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+  
+  
+  //Factorial of a number 
+
+   function factorial(num){
+         
+    let result = 1;
+
+    for( let i = 1 ; i <= num ; i++ ){
+        result *=  i
+    }
+
+       return result ;
+   }
+
+    // console.log(factorial(4));
+    
