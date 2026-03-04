@@ -164,3 +164,24 @@
 
     // Set is a built-in JavaScript object that stores only unique values.
    // It automatically removes duplicate elements from an array.
+
+
+   //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   // Count vowels in string 
+
+      function countVowels(str){
+         
+        let count = 0;
+        let vowels = 'aeiouAEIOU';
+
+        for(let char of str){
+          if(vowels.includes(char)){
+            count++ ;
+          }
+        }
+
+        return count;
+      }
+
+      // console.log(`Vowel count is : ${countVowels("Abhishek")}`);
