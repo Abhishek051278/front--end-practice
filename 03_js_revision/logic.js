@@ -131,3 +131,36 @@
        
     // console.log(Math.max(...array1));        // spread operator is compulsory beacuse math.max need numbers not array 
     
+
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+    
+     //Remove Duplicates from array without built-in function 
+
+
+     function removeDuplicate(arr){
+
+      let result = [];
+
+      for( let i = 0 ; i < arr.length ; i++ ){
+
+        if(!result.includes(arr[i])){
+          result.push(arr[i]);
+        }
+      }
+          return result;
+     }
+
+    //  console.log(removeDuplicate([1,2,2,5,5,6,7,8,8]));
+
+
+    // using built-in function 
+
+    let array2 = [ 1,2,3,3,4,5,5,6] ;
+
+    let unique = [...new Set(array2)]
+
+    // console.log(unique);
+
+    // Set is a built-in JavaScript object that stores only unique values.
+   // It automatically removes duplicate elements from an array.
