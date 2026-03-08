@@ -96,4 +96,38 @@
         // console.log(isPalindrome("abhishek"));
         // console.log(isPalindrome("racecar"));
      //   console.log(isPalindrome("1223221"));
+
+
+
+
+     // +++===============================================================+++++++++++++++++++++++++++++++++++++++++++++++++++++
         
+
+     // Find  largest Number in an array without built-in function
+
+    function largestNum (arr){
+
+      let max = arr[0];
+
+      for( let i = 1 ; i < arr.length ; i++ ){
+
+        if( arr[i] > max ){
+
+          max = arr[i];
+        }
+      }
+
+      return max;
+    }  
+
+    // console.log(largestNum([3,4,5,9,10]));
+    // console.log(largestNum([3,4,5,9,10,45,20,87]));
+
+
+    // Using Built-in funtion for same task 
+
+
+    // let array1 = [200 , 40 , 29 , 500 , 999];
+       
+    // console.log(Math.max(...array1));        // spread operator is compulsory beacuse math.max need numbers not array 
+    
