@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student registration form</title>
+  </head>
+  <body style="background-color: gray">
+    <form>
+      <h2>USer registration form</h2>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <th>Name</th>
+            <td>
+              <input
+                type="text"
+                name="name"
+                placeholder="NAME "
+                required
+                minlength="3"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Password</th>
+
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                minlength="6"
+                maxlength="12"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Email</th>
+
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Phone</th>
+
+            <td>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="10 digits number"
+                required
+                pattern="[0-9]{10}"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Age</th>
+
+            <td>
+              <input
+                type="number"
+                name="age"
+                placeholder="Enter your age"
+                required
+                min="18"
+                max="60"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Date of birth</th>
+
+            <td>
+              <input type="date" name="dob" required />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Gender</th>
+
+            <td>
+              <input type="radio" name="gender" value="male" required /> Male
+              <input type="radio" name="gender" value="female" required />
+              Female
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>other details</legend>
+        <table>
+          <tr>
+            <th>Country</th>
+            <td>
+              <select required>
+                <option value="" disabled selected>select</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Skills</th>
+            <td>
+              <input type="checkbox" value="HTML" />HTML
+              <input type="checkbox" value="CSS" />CSS
+              <input type="checkbox" value="JavaScript" />JavaScript
+            </td>
+          </tr>
+
+          <tr>
+            <th>Upload Resume</th>
+            <td>
+              <input type="file" required />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Portfolio URL</th>
+            <td>
+              <input type="url" placeholder="https://example.com" required />
+            </td>
+          </tr>
+
+          <tr>
+            <th>search</th>
+            <td>
+              <input type="search" placeholder="search something" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Readonly Field</td>
+            <td>
+              <input type="text" value="Only for reading" readonly />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Disabled Field</td>
+            <td>
+              <input type="text" value="Can't edit" disabled />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Message</th>
+            <td>
+              <textarea
+                name="messsage"
+                id="101"
+                rows="4"
+                maxlength="200"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <input type="submit" value="submit" class="sub-btn" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
